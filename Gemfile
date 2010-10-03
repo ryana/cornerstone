@@ -6,7 +6,7 @@ gem 'mongo_ext', '0.19.3'
 gem 'sendgrid', '0.1.4'
 gem 'jnunemaker-validatable', '>= 1.8.4'
 gem 'bson_ext',               '>= 1.0.4'
-gem 'devise',                 '~> 1.1.1'
+gem 'devise',                 '1.1.3'
 gem 'mm-devise',              '>= 1.1.0'
 
 # Bundle edge Rails instead:
