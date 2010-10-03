@@ -12,7 +12,8 @@ Devise.setup do |config|
   # Load and configure the ORM. Supports :active_record (default) and
   # :mongoid (bson_ext recommended) by default. Other ORMs may be
   # available as additional gems.
-  require 'devise/orm/'
+  require 'devise/orm/mongo_mapper'
+
 
   # ==> Configuration for any authentication mechanism
   # Configure which keys are used when authenticating an user. By default is
@@ -46,7 +47,7 @@ Devise.setup do |config|
   config.encryptor = :bcrypt
 
   # Setup a pepper to generate the encrypted password.
-  config.pepper = "9a807c311ae5be99cb60fb47a7878061451d48505040273caa4d8b89a839cb3a094dce2d71c4838f0c95c30e24d9437529a35c2127597c6adeab9274c47c2f4b"
+  config.pepper = "759cd275a62cc9e4f70069b51a6b9c79d6c797d83f172e6748b98f9061bded005f008da68fcb8dd0c2c8387aff5224b90bc3cd77ff8d42c9dd35f1d260c8789c"
 
   # ==> Configuration for :confirmable
   # The time you want to give your user to confirm his account. During this time
@@ -59,13 +60,13 @@ Devise.setup do |config|
 
   # ==> Configuration for :rememberable
   # The time the user will be remembered without asking for credentials again.
-  # config.remember_for = 2.weeks
+  config.remember_for = 2.weeks
 
   # If true, a valid remember token can be re-used between multiple browsers.
   # config.remember_across_browsers = true
 
   # If true, extends the user's remember period when remembered via cookie.
-  # config.extend_remember_period = false
+  config.extend_remember_period = false
 
   # ==> Configuration for :validatable
   # Range for password length
