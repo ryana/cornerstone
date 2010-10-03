@@ -2,6 +2,11 @@
  * Design taken from:
  * http://www.maxdesign.com.au/articles/css-layouts/two-fixed/
  */
+
+body {
+  font: normal normal normal 13px/1.5 'Helvetica Neue', Arial, Helvetica, 'Liberation Sans', FreeSans, sans-serif;
+}
+
 #container
 {
   margin: 0 auto;
