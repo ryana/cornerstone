@@ -3,14 +3,14 @@
 ==What is it?!
 A buzzword EXTRAVAGANZA!
 
-*RVM
-*Ruby 1.9.2-p0
-*Rails3
-*MongoMapper (on or off MongoHQ)
-*Devise
-*SendGrid
-*Chargify
-*Environment-aware Configuration Management
+#RVM
+#Ruby 1.9.2-p0
+#Rails3
+#MongoMapper (on or off MongoHQ)
+#Devise
+#SendGrid
+#Chargify
+#Environment-aware Configuration Management
 
 Most config is in config/harmony.yml
 
