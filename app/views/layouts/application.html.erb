@@ -7,10 +7,36 @@
     <%= csrf_meta_tag %>
   </head>
   <body>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+    <div id="container">
+      <div id="header">
+        <h1>
+          Site name
+        </h1>
+      </div>
+      <div id="navigation">
+        <%= navigation_content %>
+      </div>
+      <div id="content-container">
+        <div id="content">
+          <% if notice.present? %>
+            <p class="notice"><%= notice %></p>
+          <% end %>
 
-    <%= yield %>
+          <% if alert.present? %>
+            <p class="alert"><%= alert %></p>
+          <% end %>
+
+          <%= yield %> 
+        </div>
+        <div id="aside">
+          <%= yield :aside %>        
+        </div>
+        <div id="footer">
+          Copyright © Site name, 20XX
+        </div>
+      </div>
+    </div>
+
 
   </body>
 </html>
