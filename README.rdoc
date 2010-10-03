@@ -26,7 +26,7 @@ It works.  Use it.  RVM can be used to install:  ruby-1.9.2-p0
 ===Rails3
 Yeah.
 
-=== MongoMapper
+===MongoMapper
 What can I say?  I'm a fanboy.  If you want to run your own server, then
 you can figure out the config.  If you don't want to deal with that, check out
 the free accounts on MongoHQ.com.  On my laptop over wifi connecting to
@@ -36,18 +36,18 @@ turned on safe mode on the User model, that went up to 400ms.  Fine by me.
 
 Check out config/initializers/mongodb.rb
 
-=== Devise
+===Devise
 VERY impressed with Devise.  Everything "just works."  Very sensible defaults.
 
 Check out config/initializers/devise.rb
 
-=== SendGrid
+===SendGrid
 200 emails a day for free.  Perfect for testing.  1/1000th of a cent per email ($10/mo for 10k emails)
 is a good deal.
 
 I hooked it up to Devise in config/initializers/sendgrid.rb
 
-=== Chargify
+===Chargify
 The level of IMPRESSED I was at Devise doesn't hold a candle to Chargify.  These guys know
 what the hell they are doing.
 
@@ -56,15 +56,15 @@ API is implemented and documented.
 
 config/initializers/chargify.rb
 
-=== CM
+===CM
 I pulled a config thing from an @jnunemaker gist somewhere and @angilly-ified it.
 
 config/harmony.yml & lib/harmony.rb
 
-== Other stuff
+==Other stuff
 === Usage
 Do what you want with this.  Clone it.  Fork it.  Create issues.  Whatever.
 
-=== me
+===Me
 ryan@angilly.com
 @angilly
