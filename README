@@ -1,3 +1,10 @@
 == Cornerstone
 
-Rails3, MongoMapper, Devise, SendGrid
+Rails3, MongoMapper (on or off MongoHQ), Devise, SendGrid, Chargify, CM
+
+Most config is in config/harmony.yml
+
+You'll want to create a free account on MongoHQ.com, a free account on SendGrid.com,
+and a free account on Chargify.com.  For Chargify, make sure you enable API Access.
+
+

@@ -1,0 +1,29 @@
+<h1>Setup your subscription</h1>
+
+<%= form_tag(:action => :create) do %>
+
+  <%= fields_for :cc do |f| %>
+    <p><%= f.label :first_name %><br />
+    <%= f.text_field :first_name, :value => current_user.first_name %></p>
+
+    <p><%= f.label :last_name %><br />
+    <%= f.text_field :last_name, :value => current_user.last_name %></p>
+
+
+    <p><%= f.label :number %><br />
+    <%= f.text_field :number %></p>
+
+    <p><%= f.label :month %><br />
+    <%= f.text_field :month %></p>
+
+    <p><%= f.label :year %><br />
+    <%= f.text_field :year %></p>
+
+    <p><%= f.label :cvv %><br />
+    <%= f.text_field :cvv %></p>
+  <% end %>
+
+  <p><%= submit_tag "Subscribe" %></p>
+  <p>No payment is taken at this time.</p>
+
+<% end %>
