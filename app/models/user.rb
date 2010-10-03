@@ -3,6 +3,9 @@
 
 class User
   include MongoMapper::Document
+
+  safe
+
   devise :database_authenticatable, :confirmable, :trackable, :registerable, :recoverable, :rememberable
 
   key :first_name, String

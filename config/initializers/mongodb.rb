@@ -1,5 +1,5 @@
 if m = Harmony[:mongo]
-  MongoMapper.connection = Mongo::Connection.new(m[:host], m[:port])
+  MongoMapper.connection = Mongo::Connection.new(m[:host], m[:port], :logger => Rails.logger)
   MongoMapper.database = m[:database]
 
   if m[:auth]
