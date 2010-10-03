@@ -7,7 +7,6 @@ class User
 
   key :email,  String
   key :username,  String
-  key :comment_count, Integer
   key :encrypted_password, String
   key :password_salt, String
   key :reset_password_token, String
