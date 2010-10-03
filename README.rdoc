@@ -1,4 +1,4 @@
-== Cornerstone
+==Cornerstone
 
 A buzzword EXTRAVAGANZA!
 
@@ -16,14 +16,14 @@ Most config is in config/harmony.yml
 You'll want to create a free account on MongoHQ.com, a free account on SendGrid.com,
 and a free account on Chargify.com.  For Chargify, make sure you enable API Access.
 
-=== RVM
+===RVM
 Install it.  Use it.  You'll be happy.  The .rvmrc file in the repo will tell RVM to
 switch to Ruby 1.9.2 when you `cd` in
 
-=== Ruby 1.9.2
+===Ruby 1.9.2
 It works.  Use it.  RVM can be used to install:  ruby-1.9.2-p0
 
-=== Rails3
+===Rails3
 Yeah.
 
 === MongoMapper
