@@ -1,0 +1,24 @@
+DEFAULTS: &DEFAULTS
+  mongo:
+    host: localhost
+    port: 27017
+    database: cornerstone-dev
+    auth:
+      username: ryan
+      password: boulder_chicks
+  mail:
+    address: 'smtp.sendgrid.net'
+    port: 25
+    domain: 'ryanangilly.com'
+    authentication: :plain
+    user_name: 'username'
+    password: 'password'
+
+prodution:
+  <<: *DEFAULTS
+
+development:
+  <<: *DEFAULTS
+
+test:
+  <<: *DEFAULTS
