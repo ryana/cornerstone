@@ -10,6 +10,9 @@ A buzzword EXTRAVAGANZA!
 * Devise
 * SendGrid
 * Chargify
+* Sass (through Compass)
+* Mocha
+* Factory Girl
 * Environment-aware Configuration Management
 
 Most config is in config/harmony.yml
@@ -61,6 +64,17 @@ config/initializers/chargify.rb
 I pulled a config thing from an @jnunemaker gist somewhere and @angilly-ified it.
 
 config/harmony.yml & lib/harmony.rb
+
+===Sass through Compass
+If you still writing raw CSS: QUIT IT.  Use Sass.  It no understatement that it
+CHANGE YOU LIFE.
+
+===Mocha
+Need it.
+
+===Factory Girl
+Need it.
+
 
 ==Other stuff
 === Usage
