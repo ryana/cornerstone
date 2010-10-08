@@ -9,7 +9,10 @@ gem 'bson_ext',               '>= 1.0.4'
 gem 'devise',                 '1.1.3'
 gem 'mm-devise',              '>= 1.1.0'
 gem 'chargify_api_ares',      '0.3.5'
-
+gem 'haml',                   '3.0.21'
+gem 'compass',                '0.10.5'
+gem 'compass-susy-plugin',                '0.8.1'
+ 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
