@@ -35,6 +35,7 @@ gem 'compass-susy-plugin',                '0.8.1'
 group :test do
   gem 'mocha', '0.9.8'
   gem 'factory_girl', '1.3.2'
+  gem 'shoulda', '2.11.3'
 end
 
 # Bundle gems for the local environment. Make sure to

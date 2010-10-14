@@ -97,6 +97,7 @@ GEM
     rake (0.8.7)
     require_all (1.2.0)
     sendgrid (0.1.4)
+    shoulda (2.11.3)
     sugar-high (0.2.11)
       mocha (~> 0.9.8)
       require_all (~> 1.2.0)
@@ -125,3 +126,4 @@ DEPENDENCIES
   mongo_mapper (= 0.8.4)
   rails (= 3.0.0)
   sendgrid (= 0.1.4)
+  shoulda (= 2.11.3)
