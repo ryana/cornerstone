@@ -17,7 +17,7 @@ module Harmony
   end
 
   def self.raw_env
-    return APP_ENV if defined?(APP_ENV)
+    return Rails.env if defined?(Rails)
  
     "development"
   end
