@@ -13,7 +13,7 @@ module Harmony
   end
 
   def self.env
-    ENV['STAGING_ENV'] == "true" ? "#{raw_env}_staging" : raw_env
+    raw_env
   end
 
   def self.raw_env

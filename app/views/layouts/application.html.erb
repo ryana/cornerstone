@@ -2,41 +2,47 @@
 <html>
   <head>
     <title>Cornerstone</title>
-    <%= stylesheet_link_tag :all %>
-    <%= javascript_include_tag :defaults %>
+    <%= stylesheet_link_tag 'application', '/css/bootstrap.min.css' %>
+    <%= javascript_include_tag 'application', '/js/bootstrap.min.js' %>
     <%= csrf_meta_tag %>
   </head>
   <body>
-    <div id="container">
-      <div id="header">
-        <h1>
-          Site name
-        </h1>
-      </div>
-      <div id="navigation">
-        <%= navigation_content %>
-      </div>
-      <div id="content-container">
-        <div id="content">
-          <% if notice.present? %>
-            <p class="notice"><%= notice %></p>
-          <% end %>
-
-          <% if alert.present? %>
-            <p class="alert"><%= alert %></p>
-          <% end %>
-
-          <%= yield %> 
-        </div>
-        <div id="aside">
-          <%= yield :aside %>        
-        </div>
-        <div id="footer">
-          Copyright © Your App, <%= Time.now.year %> -- Based on <%= link_to 'Cornerstone', 'http://github.com/ryana/cornerstone', :target => :blank %>
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="brand" href="#">Cornerstone</a>
+          <ul class="nav pull-right">
+              <li><%= link_to 'Home', '/' %></li>
+              <li class="divider-vertical"></li>
+            <% if !current_user %>
+              <li>
+              <%= link_to "Sign in with Facebook", "/auth/facebook" %>
+              </li>
+              <li class="divider-vertical"></li>
+              <li>
+              <%= link_to 'Sign In', new_user_session_path %>
+              </li>
+            <% else %>
+              <li><%= link_to 'Your account', '/users' %></li>
+              <li class="divider-vertical"></li>
+              <li>
+              <%= link_to 'Sign Out', destroy_user_session_path, :method => :delete %>
+              </li>
+            <% end %>
+          </ul>
         </div>
       </div>
     </div>
+    <div class="container">
+      <% if notice.present? %>
+        <div class="alert alert-success"><%= notice %></div>
+      <% end %>
 
-
+      <% if alert.present? %>
+        <div class="alert alert-error"><%= alert %></div>
+      <% end %>
+ 
+      <%= yield %>
+    </div>
   </body>
 </html>

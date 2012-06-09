@@ -1,46 +1,53 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.0'
-gem 'mongo_mapper', '0.8.4'
-gem 'mongo_ext', '0.19.3'
-gem 'sendgrid', '0.1.4'
-gem 'jnunemaker-validatable', '>= 1.8.4'
-gem 'bson_ext',               '>= 1.0.4'
-gem 'devise',                 '1.1.3'
-gem 'mm-devise',              '>= 1.1.0'
-gem 'chargify_api_ares',      '0.3.5'
-gem 'haml',                   '3.0.21'
-gem 'compass',                '0.10.5'
-gem 'compass-susy-plugin',                '0.8.1'
+# Framework
+gem 'rails', '3.2.5'
+gem 'jquery-rails'
+
+ #DB
+gem 'mongo_mapper'
+gem 'mongo_ext'
+gem 'bson_ext'
+
+# Auth
+gem 'devise'
+gem 'mm-devise'
+gem 'omniauth'
+gem 'omniauth-facebook'
+gem 'omniauth-twitter'
  
-# Bundle edge Rails instead:
-# gem 'rails', :git => 'git://github.com/rails/rails.git'
+# Extras
+gem 'sendgrid'
+gem 'stripe', '1.6.2'
+gem 'typhoeus'
 
+gem 'resque'
+gem 'resque_mailer'
 
-# Use unicorn as the web server
-# gem 'unicorn'
+gem 'formtastic'
 
-# Deploy with Capistrano
-# gem 'capistrano'
-
-# To use debugger
-# gem 'ruby-debug'
-
-# Bundle the extra gems:
-# gem 'bj'
-# gem 'nokogiri'
-# gem 'sqlite3-ruby', :require => 'sqlite3'
-# gem 'aws-s3', :require => 'aws/s3'
+# Gems used only for assets and not required
+# in production environments by default.
+group :assets do
+  gem 'sass-rails'
+  gem 'coffee-rails'
+  gem 'uglifier'
+end
 
 group :test do
-  gem 'mocha', '0.9.8'
-  gem 'factory_girl', '1.3.2'
-  gem 'shoulda', '2.11.3'
+  gem 'autotest-fsevent', '0.2.4', :require => 'autotest/fsevent'
+  gem 'autotest-rails', '4.1.0', :require => 'autotest/rails'
+  gem 'capybara'
+  gem 'selenium-client'
+  gem 'ZenTest'
+  gem 'mocha'
+  gem 'factory_girl'
+  gem 'shoulda'
 end
 
 # Bundle gems for the local environment. Make sure to
 # put test-only gems in this group so their generators
 # and rake tasks are available in development mode:
-# group :development, :test do
-#  gem 'webrat'
-# end
+group :development, :test do
+  gem 'capistrano'
+end
